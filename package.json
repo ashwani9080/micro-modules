@@ -2,7 +2,7 @@
   "name": "modules",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run webpack --config webpack.prod.js",
+    "build": "yarn  webpack --config webpack.prod.js",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=8080 npx serve",
     "start": "node src/server.js",
