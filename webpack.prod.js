@@ -3,18 +3,9 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 const deps = require("./package.json").dependencies;
 module.exports = {
-  mode:'development',
-  output: {
-    publicPath: "http://localhost:8080/",
-  },
-
+  mode:'production',
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
-  },
-
-  devServer: {
-    port: 8080,
-    historyApiFallback: true,
   },
 
   module: {
