@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import './index.scss';
+import "./index.scss";
 
 const App = () => {
   return (
@@ -15,7 +15,10 @@ const App = () => {
         margin: 0,
       }}
     >
-      <Header title="Header" containerStyle={{ backgroundColor: "blue" }} />
+      <Header
+        navigation={[{ name: "Dashboard", href: "#", current: true }]}
+        containerStyle={{ backgroundColor: "black" }}
+      />
     </div>
   );
 };
