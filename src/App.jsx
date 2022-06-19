@@ -1,18 +1,23 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+
+import './index.scss';
 
 const App = () => {
   return (
-    <div>
-      <div style={{
-        margin:"10px",
-        padding:"10px",
-        textAlign:"center",
-        backgroundColor:"red"
-      }}>
-        <h1>App2</h1>
-      </div>
-    </div>)
-}
-
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      <Header title="Header" containerStyle={{ backgroundColor: "blue" }} />
+    </div>
+  );
+};
 
 export default App;
